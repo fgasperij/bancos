@@ -24,7 +24,9 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy",
 ]
-dependencies = []
+dependencies = [
+  "httpx"
+]
 
 [project.urls]
 Documentation = "https://github.com/fgasperij/bancos#readme"
@@ -34,12 +36,17 @@ Source = "https://github.com/fgasperij/bancos"
 [tool.hatch.version]
 path = "src/bancos/__about__.py"
 
-[tool.hatch.envs.types]
+[tool.hatch.envs.dev]
 extra-dependencies = [
   "mypy>=1.0.0",
 ]
-[tool.hatch.envs.types.scripts]
+[tool.hatch.envs.dev.scripts]
 check = "mypy --install-types --non-interactive {args:src/bancos tests}"
+
+[tool.hatch.envs.test]
+extra-dependencies = [
+  "pytest",
+]
 
 [tool.coverage.run]
 source_pkgs = ["bancos", "tests"]

@@ -27,9 +27,9 @@ classifiers = [
 dependencies = []
 
 [project.urls]
-Documentation = "https://github.com/Fernando Gasperi/bancos#readme"
-Issues = "https://github.com/Fernando Gasperi/bancos/issues"
-Source = "https://github.com/Fernando Gasperi/bancos"
+Documentation = "https://github.com/fgasperij/bancos#readme"
+Issues = "https://github.com/fgasperij/bancos/issues"
+Source = "https://github.com/fgasperij/bancos"
 
 [tool.hatch.version]
 path = "src/bancos/__about__.py"

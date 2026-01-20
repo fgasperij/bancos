@@ -1,4 +1,4 @@
-from bcra import BCRA
+from bancos.bcra import BCRA
 
 
 def test_debts():

@@ -48,6 +48,13 @@ extra-dependencies = [
   "pytest",
 ]
 
+[tool.hatch.envs.doc]
+extra-dependencies = [
+  "mkdocs",
+  "mkdocstrings[python]",
+  "mkdocs-material"
+]
+
 [tool.coverage.run]
 source_pkgs = ["bancos", "tests"]
 branch = true

@@ -1,0 +1,13 @@
+site_name: Bancos SDK Documentation
+
+theme:
+  name: "material"
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [src]
+
+nav:
+  - reference.md
